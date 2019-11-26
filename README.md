@@ -24,11 +24,11 @@ Python 3.5.2
 $
 ```
 
-[I have both Python 2 and Python 3 installed. On my system, Python 2 is `python`
- while Python 3 is `python3`. Likewise Python 2 uses `pip` while Python 3 uses
- `pip3`. In the instructions that follows I will use `python3` and `pip3` but
- these may be replaced with `python` and `pip` for sytems where only Python 3
- is installed.]
+[I have both Python 2 and Python 3 installed. On my system, Python 2 is <kbd>python</kbd>
+ while Python 3 is <kbd>python3</kbd>. Likewise Python 2 uses <kbd>pip</kbd> while Python 3
+ uses <kbd>pip3</kbd> In the instructions that follows I will use <kbd>python3</kbd> and
+ <kbd>pip3</kbd> but these may be replaced with <kbd>python</kbd> and <kbd>pip</kbd> for
+ systems where only Python 3 is installed.]
 
 ## Prerequisites
 
@@ -38,10 +38,6 @@ Install the latest version of Django (plus dependencies) as follows:
 
 Verify the installed version of Django as follows:
 
-    $ python3 -m django --version
-
-This should look as follows:
-
 ```bash
 $ python3 -m django --version
 2.2.7
@@ -50,7 +46,7 @@ $
 
 ## Create a Project
 
-Use the `django-admin` command to do this:
+Use the <kbd>django-admin</kbd> command to do this:
 
     $ django-admin startproject polls
 
@@ -543,6 +539,7 @@ Quit the server with CONTROL-C.
 [26/Nov/2019 20:18:01] "GET /admin/polls_app/question/1/change/ HTTP/1.1" 200 5141
 [26/Nov/2019 20:18:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
 [26/Nov/2019 20:18:05] "GET /admin/polls_app/question/1/history/ HTTP/1.1" 200 2319
+[26/Nov/2019 20:24:35] "GET /admin/logout/ HTTP/1.1" 200 1207
 ^C$
 ```
 
