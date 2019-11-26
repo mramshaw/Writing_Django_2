@@ -133,7 +133,7 @@ urlpatterns = [
 
 Next update the `polls/urls.py` file as follows:
 
-```python3
+```bash
 $ git diff polls/urls.py
 diff --git a/polls/polls/urls.py b/polls/polls/urls.py
 index c8c9627..9be9eec 100644
@@ -370,6 +370,7 @@ $
 
 For convenience lets add string methods to our models:
 
+```bash
 $ git diff polls_app/models.py
 diff --git a/polls/polls_app/models.py b/polls/polls_app/models.py
 index 48780e6..4855206 100644
@@ -527,6 +528,21 @@ Quit the server with CONTROL-C.
 [26/Nov/2019 20:01:54] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
 [26/Nov/2019 20:01:54] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
 [26/Nov/2019 20:01:54] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[26/Nov/2019 20:13:32] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[26/Nov/2019 20:13:32] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[26/Nov/2019 20:13:32] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[26/Nov/2019 20:13:32] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[26/Nov/2019 20:13:32] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20218
+[26/Nov/2019 20:13:32] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[26/Nov/2019 20:13:32] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[26/Nov/2019 20:13:32] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[26/Nov/2019 20:17:52] "POST /admin/polls_app/question/1/change/ HTTP/1.1" 302 0
+[26/Nov/2019 20:17:52] "GET /admin/polls_app/question/ HTTP/1.1" 200 4572
+[26/Nov/2019 20:17:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Nov/2019 20:17:52] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[26/Nov/2019 20:18:01] "GET /admin/polls_app/question/1/change/ HTTP/1.1" 200 5141
+[26/Nov/2019 20:18:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Nov/2019 20:18:05] "GET /admin/polls_app/question/1/history/ HTTP/1.1" 200 2319
 ^C$
 ```
 
@@ -537,6 +553,10 @@ And if we refresh our browser window we should get:
 And now we can edit our Question:
 
 ![Question](images/Question.png)
+
+And we even get a modification history:
+
+![Question changelog](images/Question_changelog.png)
 
 [END OF PART 2]
 
