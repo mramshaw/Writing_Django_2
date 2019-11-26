@@ -1,5 +1,7 @@
 # Writing Django 2
 
+[![Known Vulnerabilities](https://snyk.io/test/github/mramshaw/Writing_Django_2/badge.svg?style=plastic&targetFile=requirements.txt)](https://snyk.io/test/github/mramshaw/Writing_Django_2?style=plastic&targetFile=requirements.txt)
+
 Having investigated [Django 1 with Python 2](http://github.com/mramshaw/Writing_Django) it seemed
 time to investigate Django __2__ with Python __3__, mainly because Python 2 support ends in 2020.
 
@@ -26,7 +28,7 @@ $
 
 [I have both Python 2 and Python 3 installed. On my system, Python 2 is <kbd>python</kbd>
  while Python 3 is <kbd>python3</kbd>. Likewise Python 2 uses <kbd>pip</kbd> while Python 3
- uses <kbd>pip3</kbd> In the instructions that follows I will use <kbd>python3</kbd> and
+ uses <kbd>pip3</kbd>. In the instructions that follows I will use <kbd>python3</kbd> and
  <kbd>pip3</kbd> but these may be replaced with <kbd>python</kbd> and <kbd>pip</kbd> for
  systems where only Python 3 is installed.]
 
